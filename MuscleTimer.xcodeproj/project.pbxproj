@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09E1DA2E24D733AA52FE6870 /* Pods_MuscleTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10F7845EBE2BBE35E4E6E31 /* Pods_MuscleTimer.framework */; };
+		164BA01E24A99B000051F63D /* Countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 164BA01D24A99AFF0051F63D /* Countdown.mp3 */; };
+		164BA02024A99B8C0051F63D /* Countdownfinish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 164BA01F24A99B8C0051F63D /* Countdownfinish.mp3 */; };
+		1652E99724AD8E3D005833F0 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 1652E99624AD8D0A005833F0 /* default.realm */; };
+		1652E99924AD96BD005833F0 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652E99824AD96BD005833F0 /* Toast.swift */; };
+		167F70D624A4884F00BEE9DE /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167F70D424A4884E00BEE9DE /* PickerCell.swift */; };
+		167F70D724A4884F00BEE9DE /* PickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167F70D524A4884F00BEE9DE /* PickerCell.xib */; };
+		167F711C24A5F63F00BEE9DE /* TimeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167F711B24A5F63F00BEE9DE /* TimeSettingViewController.swift */; };
+		167F711E24A622C000BEE9DE /* TimerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167F711D24A622C000BEE9DE /* TimerNameViewController.swift */; };
+		167F712124A659DC00BEE9DE /* SetCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167F712024A659DB00BEE9DE /* SetCountViewController.swift */; };
+		168C948824813BB600A53AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C948724813BB600A53AAD /* AppDelegate.swift */; };
+		168C948A24813BB600A53AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C948924813BB600A53AAD /* SceneDelegate.swift */; };
+		168C948C24813BB600A53AAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C948B24813BB600A53AAD /* MainViewController.swift */; };
+		168C948F24813BB600A53AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168C948D24813BB600A53AAD /* Main.storyboard */; };
+		168C949124813BB800A53AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168C949024813BB800A53AAD /* Assets.xcassets */; };
+		168C949424813BB800A53AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168C949224813BB800A53AAD /* LaunchScreen.storyboard */; };
+		168C949F248151CB00A53AAD /* IntervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C949E248151CB00A53AAD /* IntervalViewController.swift */; };
+		168C94A1248152B800A53AAD /* SetTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C94A0248152B800A53AAD /* SetTimer.swift */; };
+		168C94A52481540200A53AAD /* ReorderingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C94A42481540200A53AAD /* ReorderingCollectionViewCell.swift */; };
+		168C94A72481D73900A53AAD /* CountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C94A62481D73900A53AAD /* CountDownView.swift */; };
+		168C94C9248376D600A53AAD /* IntervalTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C94C8248376D600A53AAD /* IntervalTimerView.swift */; };
+		1693E16324A03C9D001D046C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1693E16224A03C9D001D046C /* AddViewController.swift */; };
+		1693E16524A06920001D046C /* TimeChangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1693E16424A0691F001D046C /* TimeChangeModel.swift */; };
+		16A24DA5249B20440012A6A1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A24DA3249B20440012A6A1 /* CustomCell.swift */; };
+		16A24DA6249B20440012A6A1 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A24DA4249B20440012A6A1 /* CustomCell.xib */; };
+		16A24DAA249BB3FA0012A6A1 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A24DA9249BB3FA0012A6A1 /* CountDownViewController.swift */; };
+		16EA60C224D0490C00EC48DC /* StringData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EA60C124D0490B00EC48DC /* StringData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		164BA01D24A99AFF0051F63D /* Countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Countdown.mp3; sourceTree = "<group>"; };
+		164BA01F24A99B8C0051F63D /* Countdownfinish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Countdownfinish.mp3; sourceTree = "<group>"; };
+		1652E99624AD8D0A005833F0 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		1652E99824AD96BD005833F0 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		167F70D424A4884E00BEE9DE /* PickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
+		167F70D524A4884F00BEE9DE /* PickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerCell.xib; sourceTree = "<group>"; };
+		167F711B24A5F63F00BEE9DE /* TimeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSettingViewController.swift; sourceTree = "<group>"; };
+		167F711D24A622C000BEE9DE /* TimerNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerNameViewController.swift; sourceTree = "<group>"; };
+		167F712024A659DB00BEE9DE /* SetCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCountViewController.swift; sourceTree = "<group>"; };
+		168C948424813BB600A53AAD /* IntervalTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntervalTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		168C948724813BB600A53AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		168C948924813BB600A53AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		168C948B24813BB600A53AAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		168C948E24813BB600A53AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		168C949024813BB800A53AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		168C949324813BB800A53AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		168C949524813BB800A53AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		168C949E248151CB00A53AAD /* IntervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalViewController.swift; sourceTree = "<group>"; };
+		168C94A0248152B800A53AAD /* SetTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimer.swift; sourceTree = "<group>"; };
+		168C94A42481540200A53AAD /* ReorderingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderingCollectionViewCell.swift; sourceTree = "<group>"; };
+		168C94A62481D73900A53AAD /* CountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownView.swift; sourceTree = "<group>"; };
+		168C94C8248376D600A53AAD /* IntervalTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerView.swift; sourceTree = "<group>"; };
+		1693E16224A03C9D001D046C /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		1693E16424A0691F001D046C /* TimeChangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChangeModel.swift; sourceTree = "<group>"; };
+		16A24DA3249B20440012A6A1 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		16A24DA4249B20440012A6A1 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		16A24DA9249BB3FA0012A6A1 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		16EA60C124D0490B00EC48DC /* StringData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringData.swift; sourceTree = "<group>"; };
+		3067C7711C67C22485A2EBB0 /* Pods-MuscleTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuscleTimer.release.xcconfig"; path = "Target Support Files/Pods-MuscleTimer/Pods-MuscleTimer.release.xcconfig"; sourceTree = "<group>"; };
+		617B7AF1A9C30CBCBAB60E93 /* Pods-MuscleTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuscleTimer.debug.xcconfig"; path = "Target Support Files/Pods-MuscleTimer/Pods-MuscleTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		F10F7845EBE2BBE35E4E6E31 /* Pods_MuscleTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuscleTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		168C948124813BB600A53AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E1DA2E24D733AA52FE6870 /* Pods_MuscleTimer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1652E99324AC859A005833F0 /* SeedData */ = {
+			isa = PBXGroup;
+			children = (
+				1652E99624AD8D0A005833F0 /* default.realm */,
+			);
+			path = SeedData;
+			sourceTree = "<group>";
+		};
+		167F711F24A622CC00BEE9DE /* TimerSetting */ = {
+			isa = PBXGroup;
+			children = (
+				1693E16224A03C9D001D046C /* AddViewController.swift */,
+				167F711D24A622C000BEE9DE /* TimerNameViewController.swift */,
+				167F711B24A5F63F00BEE9DE /* TimeSettingViewController.swift */,
+				167F712024A659DB00BEE9DE /* SetCountViewController.swift */,
+			);
+			path = TimerSetting;
+			sourceTree = "<group>";
+		};
+		168C947B24813BB600A53AAD = {
+			isa = PBXGroup;
+			children = (
+				168C948624813BB600A53AAD /* MuscleTimer */,
+				168C948524813BB600A53AAD /* Products */,
+				40B618B7A7624EF1963A636C /* Pods */,
+				62D90ECF8F882EECED9D00B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		168C948524813BB600A53AAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				168C948424813BB600A53AAD /* IntervalTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		168C948624813BB600A53AAD /* MuscleTimer */ = {
+			isa = PBXGroup;
+			children = (
+				1652E99324AC859A005833F0 /* SeedData */,
+				168C949D248151A500A53AAD /* Model */,
+				168C949C2481519F00A53AAD /* View */,
+				168C949B2481519400A53AAD /* Controller */,
+				168C948724813BB600A53AAD /* AppDelegate.swift */,
+				168C948924813BB600A53AAD /* SceneDelegate.swift */,
+				168C949024813BB800A53AAD /* Assets.xcassets */,
+				164BA01D24A99AFF0051F63D /* Countdown.mp3 */,
+				164BA01F24A99B8C0051F63D /* Countdownfinish.mp3 */,
+				168C949524813BB800A53AAD /* Info.plist */,
+				16EA60C124D0490B00EC48DC /* StringData.swift */,
+			);
+			path = MuscleTimer;
+			sourceTree = "<group>";
+		};
+		168C949B2481519400A53AAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				167F711F24A622CC00BEE9DE /* TimerSetting */,
+				168C948B24813BB600A53AAD /* MainViewController.swift */,
+				168C949E248151CB00A53AAD /* IntervalViewController.swift */,
+				16A24DA9249BB3FA0012A6A1 /* CountDownViewController.swift */,
+				168C94A42481540200A53AAD /* ReorderingCollectionViewCell.swift */,
+				16A24DA3249B20440012A6A1 /* CustomCell.swift */,
+				16A24DA4249B20440012A6A1 /* CustomCell.xib */,
+				167F70D424A4884E00BEE9DE /* PickerCell.swift */,
+				167F70D524A4884F00BEE9DE /* PickerCell.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		168C949C2481519F00A53AAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				168C948D24813BB600A53AAD /* Main.storyboard */,
+				168C949224813BB800A53AAD /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		168C949D248151A500A53AAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				168C94A0248152B800A53AAD /* SetTimer.swift */,
+				168C94A62481D73900A53AAD /* CountDownView.swift */,
+				168C94C8248376D600A53AAD /* IntervalTimerView.swift */,
+				1693E16424A0691F001D046C /* TimeChangeModel.swift */,
+				1652E99824AD96BD005833F0 /* Toast.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40B618B7A7624EF1963A636C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				617B7AF1A9C30CBCBAB60E93 /* Pods-MuscleTimer.debug.xcconfig */,
+				3067C7711C67C22485A2EBB0 /* Pods-MuscleTimer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		62D90ECF8F882EECED9D00B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F10F7845EBE2BBE35E4E6E31 /* Pods_MuscleTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		168C948324813BB600A53AAD /* MuscleTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 168C949824813BB800A53AAD /* Build configuration list for PBXNativeTarget "MuscleTimer" */;
+			buildPhases = (
+				1721214D367D1511663C2649 /* [CP] Check Pods Manifest.lock */,
+				168C948024813BB600A53AAD /* Sources */,
+				168C948124813BB600A53AAD /* Frameworks */,
+				168C948224813BB600A53AAD /* Resources */,
+				DBF4CA046428D784C11BF4EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuscleTimer;
+			productName = MuscleTimer;
+			productReference = 168C948424813BB600A53AAD /* IntervalTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		168C947C24813BB600A53AAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Takashi Kuraoka";
+				TargetAttributes = {
+					168C948324813BB600A53AAD = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 168C947F24813BB600A53AAD /* Build configuration list for PBXProject "MuscleTimer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 168C947B24813BB600A53AAD;
+			productRefGroup = 168C948524813BB600A53AAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				168C948324813BB600A53AAD /* MuscleTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		168C948224813BB600A53AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1652E99724AD8E3D005833F0 /* default.realm in Resources */,
+				164BA02024A99B8C0051F63D /* Countdownfinish.mp3 in Resources */,
+				168C949424813BB800A53AAD /* LaunchScreen.storyboard in Resources */,
+				168C949124813BB800A53AAD /* Assets.xcassets in Resources */,
+				164BA01E24A99B000051F63D /* Countdown.mp3 in Resources */,
+				16A24DA6249B20440012A6A1 /* CustomCell.xib in Resources */,
+				168C948F24813BB600A53AAD /* Main.storyboard in Resources */,
+				167F70D724A4884F00BEE9DE /* PickerCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1721214D367D1511663C2649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuscleTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF4CA046428D784C11BF4EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuscleTimer/Pods-MuscleTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuscleTimer/Pods-MuscleTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MuscleTimer/Pods-MuscleTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		168C948024813BB600A53AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168C94A72481D73900A53AAD /* CountDownView.swift in Sources */,
+				168C94A52481540200A53AAD /* ReorderingCollectionViewCell.swift in Sources */,
+				1652E99924AD96BD005833F0 /* Toast.swift in Sources */,
+				16A24DAA249BB3FA0012A6A1 /* CountDownViewController.swift in Sources */,
+				1693E16324A03C9D001D046C /* AddViewController.swift in Sources */,
+				167F711C24A5F63F00BEE9DE /* TimeSettingViewController.swift in Sources */,
+				167F70D624A4884F00BEE9DE /* PickerCell.swift in Sources */,
+				168C94A1248152B800A53AAD /* SetTimer.swift in Sources */,
+				16EA60C224D0490C00EC48DC /* StringData.swift in Sources */,
+				168C949F248151CB00A53AAD /* IntervalViewController.swift in Sources */,
+				1693E16524A06920001D046C /* TimeChangeModel.swift in Sources */,
+				16A24DA5249B20440012A6A1 /* CustomCell.swift in Sources */,
+				168C94C9248376D600A53AAD /* IntervalTimerView.swift in Sources */,
+				167F712124A659DC00BEE9DE /* SetCountViewController.swift in Sources */,
+				168C948C24813BB600A53AAD /* MainViewController.swift in Sources */,
+				168C948824813BB600A53AAD /* AppDelegate.swift in Sources */,
+				167F711E24A622C000BEE9DE /* TimerNameViewController.swift in Sources */,
+				168C948A24813BB600A53AAD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		168C948D24813BB600A53AAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				168C948E24813BB600A53AAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		168C949224813BB800A53AAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				168C949324813BB800A53AAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		168C949624813BB800A53AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		168C949724813BB800A53AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		168C949924813BB800A53AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617B7AF1A9C30CBCBAB60E93 /* Pods-MuscleTimer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7TKR4UX63;
+				INFOPLIST_FILE = MuscleTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takashisyocora.MuscleTimer;
+				PRODUCT_NAME = IntervalTimer;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		168C949A24813BB800A53AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3067C7711C67C22485A2EBB0 /* Pods-MuscleTimer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7TKR4UX63;
+				INFOPLIST_FILE = MuscleTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takashisyocora.MuscleTimer;
+				PRODUCT_NAME = IntervalTimer;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		168C947F24813BB600A53AAD /* Build configuration list for PBXProject "MuscleTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				168C949624813BB800A53AAD /* Debug */,
+				168C949724813BB800A53AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		168C949824813BB800A53AAD /* Build configuration list for PBXNativeTarget "MuscleTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				168C949924813BB800A53AAD /* Debug */,
+				168C949A24813BB800A53AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 168C947C24813BB600A53AAD /* Project object */;
+}
